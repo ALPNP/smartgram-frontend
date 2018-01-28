@@ -1,3 +1,21 @@
-<p>
-  server-status works!
-</p>
+<h3>Статус сервера</h3>
+<table>
+    <tbody>
+    <tr>
+        <td>
+            Статус
+        </td>
+        <td>
+            {{serverStatus['status'] || 'Нет данных'}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Код статуса
+        </td>
+        <td>
+            {{serverStatus['statusCode'] || 'Нет данных'}}
+        </td>
+    </tr>
+    </tbody>
+</table>
