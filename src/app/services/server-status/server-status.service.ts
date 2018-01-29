@@ -16,7 +16,6 @@ export class ServerStatusService extends BaseService {
                 protected httpClient: HttpClient) {
         super(configService);
         this.restUrl = '/api/checkService/';
-        console.log(this.apiUrl);
     }
 
     checkServerStatus() {

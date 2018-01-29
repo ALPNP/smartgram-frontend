@@ -1,0 +1,12 @@
+<h3>
+  Получить токен доступа
+</h3>
+<form [formGroup]="accessTokenReqDataForm" (ngSubmit)="submitForm(e)">
+    <label>CLIENT_ID:
+        <input type="text" [(ngModel)]="formModel.clientId" formControlName="clientId">
+    </label>
+    <label>REDIRECT_URI:
+        <input type="text" [(ngModel)]="formModel.redirectUri" formControlName="redirectUri">
+    </label>
+    <button type="submit" [disabled]="!accessTokenReqDataForm.valid">Авторизация</button>
+</form>
